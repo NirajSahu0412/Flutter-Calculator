@@ -158,17 +158,16 @@ class MainScreen extends StatelessWidget {
                 builder: (controller) {
                   return AdvancedSwitch(
                     controller: controller.switcherController,
-                    activeImage: const AssetImage('assets/day_sky.png'),
-                    inactiveImage: const AssetImage('assets/night_sky.jpg'),
-                    activeColor: Colors.green,
-                    inactiveColor: Colors.grey,
+
+                    activeColor: Colors.deepPurpleAccent,
+                    inactiveColor: Colors.deepPurple,
                     activeChild: Text(
-                      'Day',
+                      'Light',
                       style: GoogleFonts.ubuntu(
                           fontWeight: FontWeight.bold, fontSize: 17),
                     ),
                     inactiveChild: Text(
-                      'Night',
+                      'Dark',
                       style: GoogleFonts.ubuntu(
                           fontWeight: FontWeight.bold, fontSize: 16),
                     ),
